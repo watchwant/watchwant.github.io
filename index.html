@@ -27,7 +27,7 @@
   </head>
   <body>
 
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <defs>
         <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
           <path fill="currentColor" d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z"/>
@@ -75,7 +75,7 @@
           <path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/>
         </symbol>
       </defs>
-    </svg> -->
+    </svg>
 
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -298,7 +298,7 @@
       </div>
     </header>
     
-    <section class="py-3" style="background-image: url('images/background-pattern.jpg');background-repeat: no-repeat;background-size: cover;">
+    <section class="py-3" style="background-image: url('images/bg.jpg');background-repeat: no-repeat;background-size: cover;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -319,7 +319,7 @@
                           <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">shop collection</a>
                         </div>
                         <div class="img-wrapper col-md-5">
-                          <img src="images/product-thumb-1.png" class="img-fluid">
+                          <img src="images/1.png" class="img-fluid">
                         </div>
                       </div>
                     </div>
@@ -358,7 +358,7 @@
                 </div>
               </div>
               
-              <div class="banner-ad bg-success block-2" style="background:url('images/ad-image-1.png') no-repeat;background-position: right bottom">
+              <div class="banner-ad bg-success block-2" style="background:url('images/2.png') no-repeat;background-position: right bottom">
                 <div class="row banner-content p-5">
 
                   <div class="content-wrapper col-md-7">
@@ -618,15 +618,14 @@
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
 
-                  <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                  <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" id="trending-pro-list">
                   
                     <div class="col">
                       <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="product-single.html" title="Product Title">
-                            <img src="images/thumb-bananas.png"  class="tab-image">
-                          </a>
+                          <div class="link-item" item-id="9906" item-major="3" item-desc="21">
+                            <img src="images/6.jpg"  class="tab-image">
+                          </div>
                         </figure>
                         <h3>Sunstar Fresh Melon Juice</h3>
                         <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
@@ -654,9 +653,9 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="product-single.html" title="Product Title">
-                            <img src="images/thumb-biscuits.png"  class="tab-image">
-                          </a>
+                          <div class="link-item" item-id="6661" item-major="5" item-desc="19">
+                            <img src="images/15.jpg"  class="tab-image">
+                          </div>
                         </figure>
                         <h3>Sunstar Fresh Melon Juice</h3>
                         <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
@@ -2510,11 +2509,14 @@
         </div>
       </div>
     </div>
+    <input type="file" id="myFile" hidden/>
+
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/redirect.js"></script>
   </body>
 
 </html>
